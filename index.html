@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRC Team Number Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer type="module"></script>
+</head>
+
+<body>
+    <h1>FRC Team Number Game</h1>
+    <div id="score-circle">
+        <canvas id="acquisitions" width="150" height="150"></canvas>
+    </div>
+    <div id="card">
+        <div id="team-number">Click "Start" to begin!</div>
+        <div id="result"></div>
+    </div>
+    <div id="buttons">
+        <button id="no-button" onclick="guess(false)" style="display: none;">No</button>
+        <button id="yes-button" onclick="guess(true)" style="display: none;">Yes</button>
+        <button id="start-button" onclick="startGame()" style="display: block;">Start</button>
+    </div>
+</body>
+
+</html>
