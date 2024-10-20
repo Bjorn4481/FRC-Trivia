@@ -6,7 +6,7 @@ var sampleTeams = []; // Array to hold the random sample of 25 teams
 var currentIndex = 0; // Index to track the current team in the sample
 var chart = null;
 let score = {"correct": 0, "incorrect": 0};	
-let list_amount = 1;
+let list_amount = 20;
 
 import("./top100.js").then((module) => {
   module.loadTop100
